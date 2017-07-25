@@ -1,0 +1,20 @@
+{
+  "name": "server-production",
+  "version": "1.0.0",
+  "description": "pesquisa de produtos",
+  "main": "app.js",
+  "scripts": {
+    "build": "cd prod && npm run build && rm -rf ../public/*ls && cp -R build/ ../public",
+    "postinstall": "cd prod && npm i",
+    "start": "npm run build && node app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "consign": "^0.1.6",
+    "express": "^4.15.3",
+    "lodash": "^4.17.4",
+    "react-router": "^4.1.2"
+  }
+}
